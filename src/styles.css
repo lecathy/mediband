@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.pill {
+    background-color: #112365;
+    color: #ffffff;
+    border: 1px solid #112365;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+}
