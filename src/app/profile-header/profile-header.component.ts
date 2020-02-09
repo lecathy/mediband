@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
-import { patient, patient1 } from 'src/app/patient';
+import { patient, patients } from 'src/app/patient';
 import { TextfileConverterService } from '../textfile-converter.service';
 
 @Component({
@@ -11,7 +11,8 @@ import { TextfileConverterService } from '../textfile-converter.service';
 })
 
 export class ProfileHeaderComponent implements OnInit {
-  PATIENT = patient1;
+  PATIENTS = patients;
+  PATIENT:patient;
   old_size:any = 0;
   call_function:boolean = false;
 
@@ -41,6 +42,7 @@ export class ProfileHeaderComponent implements OnInit {
       if (this.call_function){
         // TODO: Call Marwan's API Get Request with patient_id & remove console.log
         console.log(patient_id);
+        this.PATIENT = this.findPatient(patient_id, this.PATIENTS);
       }
       else {
         console.log("Bracelet was not tapped.")
@@ -48,7 +50,10 @@ export class ProfileHeaderComponent implements OnInit {
   }
 }
 
-  getAge(date:string) : string {
-    return "";
+  findPatient(patientId: string, patients: patient[]): patient {
+    for(let patient of patients){
+      if (patient.id == patientId) return patient;
+    }
+    return new patient;
   }
 }
