@@ -31,5 +31,3 @@ export class ProfileHeaderComponent implements OnInit {
     return "";
   }
 }
-
-}
