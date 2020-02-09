@@ -17,10 +17,5 @@ export class AppHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-<<<<<<< Updated upstream
-  goToHome(){
-    var element = document.getElementById("profile_details");
-  }
-=======
->>>>>>> Stashed changes
+
 }
