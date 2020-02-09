@@ -5,10 +5,20 @@ h1 {
 }
 
 .pill {
-    background-color: #112365;
-    color: #ffffff;
-    border: 1px solid #112365;
-    border-radius: 5px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 15px;
     display: inline-block;
-    padding: 5px 10px 5px 10px;
+    margin: 10px;
+    text-align: left;
+    width: 70%;
+}
+
+.white-pill {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: left;
 }

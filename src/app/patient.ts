@@ -4,7 +4,7 @@ export class patient {
     lastName?: string;
     id: string;
     dateOfBirth?: string;
-    allergies?: string [];
+    allergies?: string;
     medication?: medication [];
     medicalHistory?: medicalCondition[];
     religion?: string;
@@ -32,17 +32,19 @@ export const patient1: patient  =
     lastName: "A Rahman",
     id: "123456789",
     dateOfBirth: "06/11/2000",
-    allergies: [
-        "Peanuts",
-        "Treenuts",
-        "Penicillin",
-    ],
+    allergies: "Peanuts, Treenuts, Penicillin",
     medication: [
         {
             name: "Tylenol 3",
             condition: "Migraines",
             instructions: "Take one pill every 12 hours.",
             description: "Do not exceed 5 pills per day."
+        },
+        {
+            name: "Reliever Inhalers",
+            condition: "Asthma",
+            instructions: "Take 2 puffs to alleviate tight chest symptoms.",
+            description: "Replace every six months."
         }
     ],
     medicalHistory: [
@@ -60,9 +62,15 @@ export const patient1: patient  =
             condition: "H1N1",
             description: "Patient was hospitalized due to a high fever.",
             date: "2010/01/07",
+        },
+        {
+            condition: "Asthma",
+            description: "Patient experiences feelings of wheeziness after intensive physical activity.",
+            date:" 2009/04/15",
         }
     ],
     religion: "Islam",
-    donorStatus: "Donor",
+    donorStatus: "Organ Donor",
     bloodType: "A + ",
+    notes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 }

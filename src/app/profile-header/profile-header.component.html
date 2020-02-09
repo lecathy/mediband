@@ -1,9 +1,13 @@
 <div class=profile-header-container>
   <div class = image>
-    <img src="assets/default-profile.jpg" width="200" height="200">
+    <img src="assets/default-profile.jpg" width="250" height="250" style = "float: left; padding: 20px">
   </div>
   <div>
     <h1> {{PATIENT.firstName}} {{ PATIENT.lastName }} </h1>
-    <p> {{ PATIENT.dateOfBirth }} </p>
+    <h2> Patient ID: {{ PATIENT.id }} </h2>
+    <p> Date of Birth: {{ PATIENT.dateOfBirth }} </p>
+    <p> {{PATIENT.donorStatus}} </p>
+    <p> Blood Type: {{PATIENT.bloodType}} </p>
+    <p> Religion: {{PATIENT.religion}} </p>
   </div>
 </div>

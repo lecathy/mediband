@@ -1,0 +1,23 @@
+<div class="profile-details-container">
+  <h2> ALLERGIES </h2>
+  <p class="pill"> {{ PATIENT.allergies }}
+  </p>
+
+  <h2> MEDICATION </h2>
+  <div class="pill" *ngFor="let medicine of PATIENT.medication">
+    <p class="sub-header"> {{ medicine.name  }} </p>
+    <p> Condition: {{ medicine.condition }} </p>
+    <p> Dosage: {{ medicine.instructions }} </p>
+    <p> Other details: {{ medicine.description }} </p> 
+  </div>
+
+  <h2> MEDICAL HISTORY </h2>
+  <div class="pill" *ngFor= "let entry of PATIENT.medicalHistory">
+    <p class="sub-header"> {{ entry.condition }}</p>
+    <p> Description: {{ entry.description }} </p>
+    <p> Reported Date: {{ entry.date }} </p>
+    </div>
+
+  <h2 > NOTES </h2>
+  <p class="pill"> {{PATIENT.notes}} </p>
+</div>
