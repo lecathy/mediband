@@ -17,5 +17,7 @@ export class AppHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  goToHome(){
+    var element = document.getElementById("profile_details");
+  }
 }

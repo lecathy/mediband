@@ -22,7 +22,7 @@ import {RouterModule, Routes} from '@angular/router';
     HttpClientModule,
     RouterModule.forRoot([
       {path: 'header',component: AppHeaderComponent},
-      {path: 'waiting',component: ProfileHeaderComponent}, //act as waiting page
+      {path: 'profileheader',component: ProfileHeaderComponent},
       {path: 'profiledetails',component: ProfileDetailsComponent},
       {path: 'home',component: HomeComponent},
     ])
