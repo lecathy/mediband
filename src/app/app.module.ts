@@ -26,7 +26,6 @@ import {RouterModule, Routes} from '@angular/router';
       {path: 'profiledetails',component: ProfileDetailsComponent},
       {path: 'home',component: HomeComponent},
     ])
-    
   ],
   exports: [
     AppHeaderComponent

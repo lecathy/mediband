@@ -25,7 +25,7 @@ import {RouterModule, Routes} from '@angular/router';
       {path: 'home',component: HomeComponent}
     ])
   ],
-  exports: [ss
+  exports: [
     AppHeaderComponent
   ],
   providers: [],
