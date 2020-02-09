@@ -8,6 +8,7 @@ import { patient, patient1 } from 'src/app/patient';
   styleUrls: ['./profile-header.component.css'],
   providers: [DatePipe],
 })
+
 export class ProfileHeaderComponent implements OnInit {
 
   PATIENT = patient1;

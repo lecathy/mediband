@@ -6,6 +6,7 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { ProfileHeaderComponent } from './profile-header/profile-header.component';
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { HomeComponent } from './home/home.component';
+import {RouterModule, Routes} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,13 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      {path: 'header',component: AppHeaderComponent},
+      {path: 'profileheader',component: ProfileHeaderComponent},
+      {path: 'profiledetails',component: ProfileDetailsComponent},
+      {path: 'home',component: HomeComponent}
+    ])
   ],
   exports: [
     AppHeaderComponent
