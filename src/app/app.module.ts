@@ -19,13 +19,14 @@ import {RouterModule, Routes} from '@angular/router';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot([
       {path: 'header',component: AppHeaderComponent},
       {path: 'profileheader',component: ProfileHeaderComponent},
       {path: 'profiledetails',component: ProfileDetailsComponent},
-      {path: 'home',component: HomeComponent}
+      {path: 'home',component: HomeComponent},
     ])
-    HttpClientModule,
+    
   ],
   exports: [
     AppHeaderComponent

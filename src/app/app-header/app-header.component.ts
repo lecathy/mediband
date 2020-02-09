@@ -19,6 +19,5 @@ export class AppHeaderComponent implements OnInit {
 
   goToHome(){
     var element = document.getElementById("profile_details");
-    element.style="display:none";
   }
 }
