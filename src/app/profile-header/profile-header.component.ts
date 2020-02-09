@@ -9,6 +9,7 @@ import { TextfileConverterService } from '../textfile-converter.service';
   styleUrls: ['./profile-header.component.css'],
   providers: [DatePipe],
 })
+
 export class ProfileHeaderComponent implements OnInit {
   PATIENT = patient1;
   old_size:any = 0;

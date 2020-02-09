@@ -1,9 +1,14 @@
-<div class="profile-details-container">
-  <h2> ALLERGIES </h2>
+<div class="app-header-container">
+  <img src="assets/med-logo.JPG" width="150" height="75" class="align-left" style="float: right">
+  <h2 class="white-pill"  routerLink="/home"> < GO BACK TO HOME </h2>
+</div>
+<!-- ----------------------------------- -->
+<div class="profile-details-container" id="profile_details">
+  <h2 class=h2> ALLERGIES </h2>
   <p class="pill"> {{ PATIENT.allergies }}
   </p>
 
-  <h2> MEDICATION </h2>
+  <h2 class = h2> MEDICATION </h2>
   <div class="pill" *ngFor="let medicine of PATIENT.medication">
     <p class="sub-header"> {{ medicine.name  }} </p>
     <p> Condition: {{ medicine.condition }} </p>
@@ -18,6 +23,6 @@
     <p> Reported Date: {{ entry.date }} </p>
     </div>
 
-  <h2 > NOTES </h2>
+  <h2 class = h2> NOTES </h2>
   <p class="pill"> {{PATIENT.notes}} </p>
 </div>

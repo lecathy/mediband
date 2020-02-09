@@ -1,10 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './app-header.component.html',
   styleUrls: ['./app-header.component.css']
 })
+
+
+
 export class AppHeaderComponent implements OnInit {
 
   constructor() { }
@@ -13,7 +18,7 @@ export class AppHeaderComponent implements OnInit {
   }
 
   goToHome(){
-    
+    var element = document.getElementById("profile_details");
+    element.style="display:none";
   }
-
 }
