@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
@@ -24,6 +25,7 @@ import {RouterModule, Routes} from '@angular/router';
       {path: 'profiledetails',component: ProfileDetailsComponent},
       {path: 'home',component: HomeComponent}
     ])
+    HttpClientModule,
   ],
   exports: [
     AppHeaderComponent
