@@ -1,8 +1,23 @@
+<div class=all>
 <div class="app-header-container">
   <img src="assets/med-logo.JPG" width="150" height="75" class="align-left" style="float: right">
   <h2 class="white-pill"  routerLink="/home"> < GO BACK TO HOME </h2>
 </div>
 <!-- ----------------------------------- -->
+<div class=profile-header-container>
+  <div class = image>
+    <img src="assets/default-profile.jpg" width="250" height="250" style = "float: left; padding: 20px">
+  </div>
+  <div>
+    <h1 class = h1ph> {{PATIENT.firstName}} {{ PATIENT.lastName }} </h1>
+    <h2 class = h2ph> Patient ID: {{ PATIENT.id }} </h2>
+    <p class = pph> Date of Birth: {{ PATIENT.dateOfBirth }} </p>
+    <p class = pph> {{PATIENT.donorStatus}} </p>
+    <p class = pph> Blood Type: {{PATIENT.bloodType}} </p>
+    <p class = pph> Religion: {{PATIENT.religion}} </p>
+  </div>
+</div>
+<!-- -------------------------------------------- -->
 <div class="profile-details-container" id="profile_details">
   <h2 class=h2> ALLERGIES </h2>
   <p class="pill"> {{ PATIENT.allergies }}
@@ -25,4 +40,5 @@
 
   <h2 class = h2> NOTES </h2>
   <p class="pill"> {{PATIENT.notes}} </p>
+</div>
 </div>

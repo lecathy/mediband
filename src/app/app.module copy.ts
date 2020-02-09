@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
@@ -19,16 +18,14 @@ import {RouterModule, Routes} from '@angular/router';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     RouterModule.forRoot([
       {path: 'header',component: AppHeaderComponent},
       {path: 'waiting',component: ProfileHeaderComponent}, //act as waiting page
       {path: 'profiledetails',component: ProfileDetailsComponent},
-      {path: 'home',component: HomeComponent},
+      {path: 'home',component: HomeComponent}
     ])
-    
   ],
-  exports: [
+  exports: [ss
     AppHeaderComponent
   ],
   providers: [],
